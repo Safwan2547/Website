@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+    <title>Safwan Serajum</title>
+
+    <!--Font Import : PLUS JAkratra sans Regular 400, Mulish Semibold 600-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Lato:wght@100;300&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./CSS/Stylesheet-1.css">
+
+    <!--GSAP IMPORT-->
+    <script src="./JavaScript/GSAP/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+
+    <script src="JavaScript/GSAP/TextPlugin.min.js"></script>
+
+    <script src="./JavaScript/Modules/stars.js" type="module"  ></script>
+    <script src="./JavaScript/Modules/parallax.js" type="module"></script>
+    <script src="./JavaScript/Modules/animations.js" type="module"></script>
+    <script src="./JavaScript/Modules/cursor.js" type="module"></script>
+    <script src="./JavaScript/Modules/MobileAnimations.js" type="module"></script>
+
+
+
+
+</head>
+<body>
+
+
+<div id="Wrapper">
+<!--Making The intro Animation Slide-->
+
+    <div class="intro" >
+        <h1 class="hide"><span class="text">For those who keep moving forward</span></h1>
+    </div>
+<!--Cursor-->
+    <div class="cursor"></div>
+<!--The Name on the Left of the Nav Bar-->
+
+
+    <div id="nav-name">
+        <div id="navNameAligner">
+        <h5 id="nameOnNav"><a href="#" onclick="window.scrollTo(0,0)">Safwan.Serajum</a></h5>
+        </div>
+        <div class="responsive_nav">  </div>
+    </div>
+<!--The Nav Bar on the right side of the screen-->
+
+
+    <nav id="Navigation">
+
+
+        <div id="Nav-Background"></div>
+
+        <ul class="navbar">
+            <li id="nav1" class="nav_enlarge"><a href="mailto:safwanserajum@gmail.com" target="_blank">Email</a></li>
+            <li id="nav2" class="nav_enlarge"><a href="#"> Youtube </a></li>
+            <li id="nav3" class="nav_enlarge"><a target="_blank" href=https://twitter.com/SafwanSerajum>Twitter</a> </li>
+            
+
+           <!-- <li id><button id="Dark"></button></li>-->
+        </ul>
+
+    </nav>
+    <nav id="responsiveNavbar">
+        <button id="mobileNavButton" ></button>
+        <div id="buttonAnimationMobile">
+            <div id="stroke1" class="strokes" ></div>
+            <div id="stroke2" class="strokes"></div>
+            </div>
+
+        <div id="responsiveBackground" data-visible="false" class="stateNone" >
+            <div id="star1Mobile" class="aboutPageAnimationElement"><img src="./Files/img/Star2.svg" alt="Picture of a star"></div>
+            <ul id="navList" class="navbar">
+                <li ><a href="mailto:safwanserajum@gmail.com" target="_blank">Email</a></li>
+                <li ><a href="#"> Youtube </a></li>
+                <li ><a target="_blank" href=https://twitter.com/SafwanSerajum>Twitter</a> </li></ul>
+            </div>
+    </nav>
+
+<!--First Page-->
+
+    <section id="Landing"  rel="prefetch">
+
+<!--        Central Image-->
+
+        <article id="About-me">
+                    <p id="Exhibit-desktop">
+<!--                        <small>Hey there! I am an aspiring</small> <br>-->
+                    Photographer<br>
+                        Designer<br>
+                        Storyteller<br>
+<!--                          <span id="and"></span>   <br>-->
+<!--                        Programmer<br>-->
+                        <small id="Halifax">Halifax based</small>
+                   </p>
+
+
+                   <p id="Exhibit-responsive">  Forward </p></article>
+        <div class="Exhibit" rel="prefetch"  >  </div>
+
+
+
+
+
+        <div id="circleAnimationLanding"><div id="circle2"></div> </div>
+        <div id="arrow">
+            <img src="Files/img/WebsiteArrowV2.svg" alt="Arrow animation at the bottom of the landing">
+
+        </div>
+
+      </section>
+    <div id="empty"></div>
+
+    <section id="aboutPage">
+
+        <div id="aboutWrapper">
+        <article class="aboutArticle">
+
+            <h3 id="textBox1" class="textBoxAbout"> Hello!</h3>
+            <h4 id="textBox2" class="textBoxAbout"> It's   <span id="Safwan-textbox2">Safwan</span> here</h4>
+            <h4 id="textBox3" class="textBoxAbout"> I am an aspiring filmmaker and designer</h4>
+            <h3 id="textBox4" class="textBoxAbout"> Check out my portfolio! </h3>
+
+
+        </article>
+
+        <div id="animationsAboutPage">
+            <div id="northStar" class="aboutPageAnimationElement"><img src="./Files/img/Star2.svg" alt="The biggest star that gets big and small over time"></div>
+
+
+            <div id="solarEclipseWrapper" class="aboutPageAnimationElement">
+            <div id="solarEclipse">
+
+                <div id="sun"></div><div id="moon" class="moon">  </div>
+
+
+            </div>
+<!--                <div id="moonFollower" class="moon"></div>-->
+            </div>
+            <div id="solarSystemWrapper" class="aboutPageAnimationElement">
+            <div id="solarSystem">
+                <div id="center"></div>
+                <div id="planet1Path" > <div id="planet1" class="planet"></div> </div>
+                <!--            <div id="planet1Orbit"></div>-->
+                <div id="planet2Path" ><div id="planet2" class="planet"></div> </div>
+                <div id="planet3Path" ><div id="planet3" class="planet"></div> </div>
+                <div id="planet4Path" ><div id="planet4" class="planet"></div> </div>
+                <div id="planet5Path" ><div id="planet5" class="planet"></div> </div>
+                <div id="planet6Path" ><div id="planet6" class="planet"></div> </div>
+                <div id="planet7Path" ><div id="planet7" class="planet"></div> </div>
+                <div id="planet8Path" ><div id="planet8" class="planet"></div> </div>
+            </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <nav id="mobile_nav">
+            <ul class="navbar" id="navbarMobile">
+                <li id="nav1Mobile"><a href="mailto:safwanserajum@gmail.com" target="_blank">Email</a></li>
+                <li id="nav2Mobile"><a href="#"> Youtube </a></li>
+                <li id="nav3Mobile"><a target="_blank" href="https://instagram.com/safwanserajum?igshid=YmMyMTA2M2Y="><img class="instagram_logo" src="Files/img/Instagram_Glyph_Black.svg" alt="Instagram logo"></a> </li>
+            </ul>
+        </nav>
+
+        </div>
+
+
+    </section>
+
+
+    <div id="empty2"></div>
+    <section id="portfolio-sec">
+
+        <div class="Transition"></div>
+        <h1 class = "sectionHeaders" id="photography_header">Photography</h1>
+        <div class="portfolio" >
+
+
+
+                <div class="img-1 galleryImg" >
+                    <h1 class="imageTitle">Tungsten</h1>
+                    <img id = "1" class="specificImg" src="Files/img/Tungsten2.jpg" loading="eager" alt="Image of a boat with yellow lights at night">
+                    <h1 class="image_text_hover"> "Know thyself <br> know thy enemy <br> a thousand battles <br> and you will never be in peril" <br>       -Sun Tzu</h1></div>
+
+                <div class = "img-2 galleryImg">
+                    <h1 class="imageTitle">Back Street</h1>
+                    <img id="2" class="specificImg" src="Files/img/backstreetLights2.jpg" loading="eager" alt="Picture of an alleyway with yellow glow">
+                        <h1 class="image_text_hover"> “The master has failed <br> more times than the beginner has even tried.”
+                            <br>― Stephen McCranie</h1></div>
+                <div class="img-3 galleryImg">
+                    <h1 class="imageTitle">Colors of Glass</h1>
+                    <img class="specificImg" src="Files/img/ColorsOfGLass32.jpg" alt="Glass with multiple colors and a bit of glow, like church lass painting">
+
+                    <h1 class="image_text_hover">This tradition dates back thousands of years and many have enlightened by the light that came through it. </h1></div>
+
+                <div class="img-4 galleryImg">
+                    <h1 class="imageTitle"> Touching the heavens</h1>
+                    <img class="specificImg" src="Files/img/touchingTheHeavens2.jpg"  alt="The Freedom tower in NYC in black and white" >
+
+                            <h1 class="image_text_hover"> From the beginning of time, mankind looked up and dreamt of touching the heavens. <br> <br> When the day comes; <br><br>Will we finally be free from the Shackles of our own dreams?</h1></div>
+                <div class="img-5 galleryImg">
+                    <h1 class="imageTitle"> Home</h1>
+
+                <img  class="specificImg" src="Files/img/Streetwalk.JPG" alt="A Family walking down a night street">
+                    <h1 class="image_text_hover">Sometimes, home is not a place.</h1>
+
+            </div>
+            <div class="img-6 galleryImg" >
+                <h1 class="imageTitle"> Storefont</h1>
+
+                <img class="specificImg" src="Files/img/StoreFront2.jpg" alt="Aesthetic picture of the front of the store">
+                <h1 class="image_text_hover">Perhaps sometimes we must look backwards to find a way to move forward.</h1>
+
+
+
+            </div>
+            <div class="img-7 galleryImg">
+                <h1 class="imageTitle">Star-Shaft</h1>
+                <img class="specificImg" src="Files/img/Star-Shaft2.JPG" alt="A building with the Canadian flag alighned with a  star">
+                <h1 class="image_text_hover">Thousands of years ago we built monuments that aligned with the stars without the help of
+                    advanced mathematics. Perhaps the
+                stars are connected to us in a more spiritual way than meets the eye.</h1>
+            </div>
+            <div class="img-8 galleryImg">
+                <h1 class="imageTitle">Pause</h1>
+                <img class="specificImg" src="Files/img/The%20Hand.JPG" alt="A stop sign with a red glowing hand">
+                <h1 class="image_text_hover">Maybe the only time we stop to smell the roses in an ever moving world.</h1>
+            </div>
+            <div class="img-9 galleryImg">
+                <h1 class="imageTitle"> Shade</h1>
+                <img class="specificImg" src="Files/img/Shade-v3.JPG" alt="picture of a wall lamp in the corner">
+                <h1 class="image_text_hover">At times we may find solace under the shade. However, we must be careful not to plant our roots there.</h1>
+            </div>
+            <div class="img-10 galleryImg">
+                <h1 class="imageTitle"> The Shy Moon</h1>
+                <img class="specificImg" src="Files/img/The-shy-moon2.jpg" alt="Picture of a moon in the night sky">
+                <h1 class="image_text_hover">The moon is perhaps the greatest symbol of for mankind's collective curiosity. Our ansestors looked up the the moon and wondered about our place in the universe.</h1>
+            </div>
+
+
+
+
+
+
+        </div>
+
+<!--        <div id="modal">-->
+<!--            <div id="fullImg"></div>-->
+
+<!--        </div>-->
+
+
+    </section>
+    <section id="contactForm">
+
+        <div id="contactTypoAnimation">
+            <div id="part2" class="contactTypo">
+                <h1></h1>
+            </div>
+        </div>
+
+        <div id="formWrapper">
+
+
+        <form id= "contact" action="https://formsubmit.co/serajumsafwan25@gmail.com"  method="POST">
+            <input id= "nameInput" type="text" name="Name" placeholder="Full Name" required>
+            <input id="emailInput" type="email" name="Email" placeholder="Email" required>
+            <textarea id="textInput" name="text" placeholder="Message" required></textarea>
+            <button id="sendButton" type="submit">Send</button>
+
+        </form>
+<!--            <button id="sendButton" type="submit">Send</button>-->
+        </div>
+
+
+    </section>
+</div>
+
+
+    <footer>
+
+        <div class="footer-content">
+            <h6>Designed and developed by Safwan Serajum <br>
+            This website is still under development*<br>
+            All Rights Reserved</h6>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="./JavaScript/script.js"></script>
+
+</body>
+</html>
