@@ -1153,6 +1153,37 @@ section {
     color:var(--Main-2)
 }
 /*Portfolio*/
+#featured{
+    height:90vh;
+    width:100%;
+    /*background-color: bisque;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+}
+ #featured-header{
+
+    position: absolute;
+    top: 0;
+    height: 20%;
+     font-size: var(--heading);
+     opacity: 1;
+     color: var(--Dark);
+     margin: 2rem;
+     font-family: "Lato",sans-serif;
+     font-weight: 400;
+
+
+
+}
+ .featured-content{
+     justify-content: center;
+    align-items: center;
+     position: relative;
+ }
 .portfolio{
     position: relative;
     padding: 1rem;
@@ -1165,7 +1196,7 @@ section {
     grid-row-gap: 1rem;
 
     width: max(90vw,1000px);
-    height:100%;
+    height:70%;
     /*border: #232023 solid 5px;*/
     z-index: 10;
     margin-left:  0.5rem;

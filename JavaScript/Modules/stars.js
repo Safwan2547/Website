@@ -57,7 +57,7 @@
      star.classList.add("star")
      star.classList.add("dimmingZone1")
      const x = Math.floor(Math.random() * window.innerWidth)-10
-     const y = Math.floor(Math.random() * document.getElementById("aboutPage").clientHeight)*2
+     const y = Math.floor(Math.random() * document.getElementById("aboutPage").clientHeight)*1.5
 
      const size = Math.random() * 1;
      star.style.left = x + "px"
@@ -74,7 +74,7 @@
      star.classList.add("star")
      star.classList.add("dimmingZone2")
      const x = Math.floor(Math.random() * window.innerWidth)-10
-     const y = Math.floor(Math.random() * document.getElementById("aboutPage").clientHeight)*2
+     const y = Math.floor(Math.random() * document.getElementById("aboutPage").clientHeight)*1.5
 
      const size = Math.random() * 1;
      star.style.left = x + "px"
