@@ -728,7 +728,7 @@ section {
 
     /*border: #3F4E4f solid 10px;*/
 
-    text-align: left;
+    text-align: center;
     position: relative;
     font-family: "Lato",sans-serif;
     font-weight: 300;
@@ -765,6 +765,7 @@ section {
 }
 .textBoxAbout{
     transition: all 500ms ease-in-out;
+    width: 70%;
 }
 .aboutPageAnimationElement{
     margin: 5rem;
