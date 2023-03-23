@@ -694,7 +694,7 @@ section {
     align-items: center;
     align-content: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--Main-1);
 
     margin: 5rem;
@@ -702,11 +702,11 @@ section {
     text-align: center;
     position: relative;
     font-family: "Lato",sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 
 }
 #Safwan-textbox2{
-    font-size: 3.5rem;
+    font-size: 4rem;
     opacity: 0.9;
     text-transform: full-width;
     color: var(--Dark);
@@ -723,7 +723,7 @@ section {
     align-items: center;
     justify-content: center;
     margin:5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--Main-1);
 
     /*border: #3F4E4f solid 10px;*/
@@ -731,7 +731,7 @@ section {
     text-align: left;
     position: relative;
     font-family: "Lato",sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 
 }
 #textBox3{
@@ -741,12 +741,13 @@ section {
 
     font-size: 2rem;
     color: var(--Main-1);
+    text-wrap: normal;
 
     /*border: #3F4E4f solid 10px;*/
     text-align: center;
     position: relative;
     font-family: "Lato",sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 #textBox4{
     margin:5rem;
@@ -760,7 +761,7 @@ section {
     text-align: center;
     position: relative;
     font-family: "Lato",sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .textBoxAbout{
     transition: all 500ms ease-in-out;
@@ -1163,6 +1164,7 @@ section {
     position: relative;
     z-index: 10;
 
+
 }
  #featured-header{
 
@@ -1171,7 +1173,7 @@ section {
     height: 20%;
      font-size: var(--heading);
      opacity: 1;
-     color: var(--Dark);
+     color: var(--Main-1);
      margin: 2rem;
      font-family: "Lato",sans-serif;
      font-weight: 400;
@@ -1183,6 +1185,25 @@ section {
      justify-content: center;
     align-items: center;
      position: relative;
+     display: flex;
+     height:60%;
+     width:40%;
+
+ }
+ #Project-Noir{
+     height: 100%;
+     width: 100%;
+     padding: 10%;
+
+
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+ }
+ #Project-Noir img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
  }
 .portfolio{
     position: relative;
