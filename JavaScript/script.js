@@ -38,9 +38,9 @@ else{
   userDevice="Desktop"
 }
 window.addEventListener("load",function(){
-  if(isMobile){
+  if(mobile){
     gridAdjustmentMobile()}
-  else if(!isMobile){
+  else if(!mobile || isTablet){
     heightAdjustment()
   }})
 console.log(userDevice)
@@ -304,16 +304,16 @@ function gridAdjustmentMobile(){
 
     sum+=height
 
-    if(i%2===0){
+    if(i%1===0){
       gridRow+=1;
     }
     let gridRowEnd=gridRow+1
 
 
-    if(width>height){
-      gridCol=1
-      gridChild[i].style.gridArea=gridRow+"/"+gridCol+"/"+gridRow+"/"+3
-    }
+    // if(width>height){
+    //   gridCol=1
+    //   gridChild[i].style.gridArea=gridRow+"/"+gridCol+"/"+gridRow+"/"+3
+    // }
     if(width>height && i%2===0){
       gridRow+=1
     }
@@ -322,14 +322,14 @@ function gridAdjustmentMobile(){
 
 
     }
-    gridCol++
-    if(gridCol>2){
-      gridCol=1
-    }
+    // gridCol++
+    // if(gridCol>2){
+    //   gridCol=1
+    // }
     console.log(gridChild[i].style.gridArea)
   }
   sum+=100
-  let gridSize=sum/10
+  let gridSize=sum/9
   portfolio.style.gridTemplateRows="repeat("+"auto"+gridSize+")"
   portfolio.style.height=sum+"px"
   sum+=400

@@ -1213,7 +1213,7 @@ section {
     display: grid;
 
     grid-template-rows: auto;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
 
@@ -2439,7 +2439,7 @@ footer{
         }
         .portfolio{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 60%;
             width: 90%;
             margin: 0;
             padding: 0;
@@ -2802,6 +2802,8 @@ footer{
     }
     .textBoxAbout{
         transition: all 500ms ease-in-out;
+        font-size: 0.1rem;
+        margin: 2rem;
     }
     .aboutArticle{
         margin: 0;
@@ -2961,7 +2963,7 @@ footer{
     }
     .portfolio{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60%;
 
 
 
@@ -3000,6 +3002,7 @@ footer{
     }
     #portfolio-sec{
         position: relative;
+        padding: 2rem;
     }
     .sectionHeaders{
         position: absolute;
@@ -3292,7 +3295,7 @@ footer{
     }
     .portfolio{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3,minmax(0,1fr));
 
 
 
@@ -3392,6 +3395,9 @@ footer{
     left: 50%;
     transform: translate(-50%,-50%);
     transition:all ease-in-out 500ms
+}
+.img-9{
+    display: none;
 }
 
 
