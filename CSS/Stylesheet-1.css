@@ -1156,10 +1156,11 @@ section {
 }
 /*Portfolio*/
 #featured{
+    display: none;
     height:90vh;
     width:100%;
     /*background-color: bisque;*/
-    display: flex;
+
     justify-content: center;
     align-items: center;
     position: relative;
@@ -2332,7 +2333,7 @@ footer{
 
 
         #portfolio-sec {
-            max-height: 3300px;
+            /*max-height: 3300px;*/
 
         }
 
@@ -2439,11 +2440,11 @@ footer{
         }
         .portfolio{
             display: grid;
-            grid-template-columns: 60%;
-            width: 90%;
+            grid-template-columns: 70%;
+            width: 100%;
             margin: 0;
             padding: 0;
-            position: absolute;
+            position: inherit;
 
         }
         #photography_header{
@@ -2963,13 +2964,13 @@ footer{
     }
     .portfolio{
         display: grid;
-        grid-template-columns: 60%;
+        grid-template-columns: 90%;
 
 
 
 
 
-        width: 90%;
+        width: 100%;
 
     }
     .specificImg{
@@ -3002,7 +3003,7 @@ footer{
     }
     #portfolio-sec{
         position: relative;
-        padding: 2rem;
+
     }
     .sectionHeaders{
         position: absolute;

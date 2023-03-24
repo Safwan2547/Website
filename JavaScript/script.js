@@ -331,11 +331,12 @@ function gridAdjustmentMobile(){
   sum+=100
   let gridSize=sum/9
   portfolio.style.gridTemplateRows="repeat("+"auto"+gridSize+")"
+  sum+=100
   portfolio.style.height=sum+"px"
-  sum+=400
+
   let portfolioHead=document.querySelector("#photography_header")
   let portfolioSec=document.querySelector("#portfolio-sec")
-  portfolioSec.style.height=portfolio.clientHeight+300+"px";
+  portfolioSec.style.height=portfolio.clientHeight+200+"px";
   portfolioSec.style.position="relative"
   portfolioHead.style.top="0"
   portfolioHead.style.margin="0px"
