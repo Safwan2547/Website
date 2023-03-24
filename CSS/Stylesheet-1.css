@@ -1292,10 +1292,10 @@ section {
 
 }
 .imageTitle{
-
+    display: none;
     justify-content: center;
     font-size: 2rem;
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
     position: relative;
 
@@ -1309,7 +1309,8 @@ section {
     /*padding: 2rem;*/
 }
 .image_text_hover{
-    display: flex;
+    display: none;
+    /*display: flex;*/
     flex-wrap: wrap;
     overflow-x: hidden;
     position: absolute;

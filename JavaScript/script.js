@@ -356,7 +356,7 @@ function heightAdjustment(){
   img.forEach(function (x){
     sum+=x.clientHeight
   })
-  sum=sum/2+150;
+  sum=sum/3+300;
 
   console.log(sum)
   portfolio.style.height=sum+"px"
