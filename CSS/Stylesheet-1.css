@@ -1406,9 +1406,10 @@ section {
     position: relative;
 }
 .modal h1{
+    
     justify-content: center;
     font-size: 2rem;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     position: relative;
     transition: all ease-out 0.7s;
@@ -2755,7 +2756,7 @@ footer{
         /*border: #2d2d2b solid 5px;*/
         font-size: 2rem;
 
-
+        
 
     }
     #Navigation{
@@ -2995,7 +2996,7 @@ footer{
     }
 
     .portfolio div{
-
+        
         padding: 0;
         margin: 0;
     }

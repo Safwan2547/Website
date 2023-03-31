@@ -370,7 +370,12 @@ function heightAdjustment(){
 
 //Image Viewer
 function clickForImage(){
-
+  //disable mobile Modal (temporary measure)
+if(isMobile){
+  
+  
+  return;
+}
 const modal=document.querySelector("#modal")
 const imgContainer=document.querySelector("#fullImg")
 const imageDiv=document.querySelectorAll(".galleryImg")
@@ -581,6 +586,8 @@ document.addEventListener("DOMContentLoaded",function (){
   navBack.style.zIndex="0"
 } )
 navButton.addEventListener("click", mobileNavToggle )
+
+
 
 
 
