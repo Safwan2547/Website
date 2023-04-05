@@ -6,15 +6,70 @@ function cursor() {
   const customHover4 = document.querySelectorAll("form input")
   const customHover5 = document.querySelectorAll("form textarea")
   const customHover6 = document.querySelectorAll("form button")
+  //increase rate function
+  function increaseRate(start, end, duration) {
+    const change = end - start;
+    let time = 0;
+    let increment = 0.01;
+    const interval = setInterval(function() {
+      time += 10;
+      increment += 0.0001 * time / duration;
+      const value = start + change * Math.pow(increment, 3);
+      console.log(value);
+      if (time >= duration) clearInterval(interval);
+    }, 10);
+  }
 
-
+  //These variables Keep track of previous cursor Data
+  let prevTime=0;
+  let prevCursorX = 0;
+  let prevCursorY = 0;
+  let velocityX=0;
+  let velocityY=0;
+  
 
   document.addEventListener("mousemove", (e) => {
       let xCoordinate = e.clientX;
       let yCoordinate = e.clientY;
 
-      cursor.style.left = xCoordinate + "px";
-      cursor.style.top = yCoordinate + "px";
+      const timeNow=Date.now();
+      const timeDiff=timeNow-prevTime;
+      prevTime=timeNow;
+
+      //calculate distance the mouse travelled;
+      const deltaX = xCoordinate - prevCursorX;
+      const deltaY = yCoordinate - prevCursorY;
+
+      prevCursorX = deltaX;
+      prevCursorY = deltaY;
+
+      velocityX += (deltaX / 100 - velocityX) * 0.05;
+      velocityY += (deltaY / 100 - velocityY) * 0.05;
+
+      
+      // const accelerationX=(speedX-(prevCursorX/timeDiff))/timeDiff;
+
+      // xCoordinate+=velocityX;
+      // yCoordinate+=velocityY;
+      let delay=200;
+      
+
+      setTimeout(() => {
+
+        // cursor.style.transform="translate3d(0,0,0)"
+        // cursor.style.transition = 'transform 0.1s ease-out';
+        // cursor.style.transform = `translate(${xCoordinate}px, ${yCoordinate}px)`;
+        cursor.style.left = xCoordinate + velocityX + "px";
+        cursor.style.top = yCoordinate + velocityY + "px";
+      }, delay);
+
+
+
+      // cursor.style.transform="translate3d(0,0,0)"
+      
+      // cursor.style.left = xCoordinate + "px";
+      // cursor.style.top = yCoordinate + "px";
+
 
 
     }
@@ -92,6 +147,11 @@ function cursor() {
       cursor.classList.remove("hover")
     })
   }))
+
+
+
+  
+  
 
 
 }

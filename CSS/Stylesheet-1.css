@@ -94,7 +94,14 @@ body{
     border:2px solid var(--Dark);
     z-index: 15;
     pointer-events: none;
-    transition: width 550ms, height 550ms, background-color 550ms, border 550ms, opacity 550ms ;
+    /* transform: scale(1.1) translate3d(-50px, -50px, 0); */
+
+    transition: width 550ms, height 550ms, background-color 550ms, border 550ms, opacity 550ms, transform 0.5s;
+
+
+
+   
+
 
     top:50%;
     left: 50%;
